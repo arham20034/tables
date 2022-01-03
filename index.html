@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color:rgb(236, 200, 200);"></body>
+
+<style>
+    h1 {
+        color: rgb(7, 70, 243);
+    }
+
+    h2 {
+        color: rgb(40, 147, 218);
+    }
+
+    h3 {
+        color: rgb(107, 43, 226);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+</style> >
+<h1>TABLES</h1>
+<h2>ENTER A NUMBER</h2>
+<div class="container">
+    <input type="number" id="input">
+    <button onclick="table()">RESULT</button>
+</div>
+<h3>RESULT</h3>
+<h2 id="result"></h2>
+<script>
+    function table() {
+        var a = document.getElementById("input").value
+        for (var i = 0; i <= 11; i++) {
+            var j = i + 1
+            result = (`${a}X${j}=${j * a}`)
+            document.getElementById("result").innerText += result + "\n"
+        }
+    }
+</script>
+</body>
+
+</html>
